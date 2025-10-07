@@ -1,0 +1,24 @@
+<div>
+    <h1>Distancia</h1>
+    <form [formGroup]="formulario">
+        <div>
+            <label for="x1"> X1:</label>
+            <input type="number" formControlName="x1" id="x1">
+        </div>
+         <div>
+            <label for="y1">Y1:</label>
+            <input type="number" formControlName="y1" id="y1">
+        </div>
+        <div>
+            <label for="x2"> X2:</label>
+            <input type="number" formControlName="x2" id="x2">
+        </div>
+         <div>
+            <label for="y2">Y2:</label>
+            <input type="number" formControlName="y2" id="y2">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="Distancia()">Distancia</button>
+      <!--<div ngIf="resulatado !== null">-->  
+            <h2> Resultado : {{resultado}}</h2>
+    </form>
+</div>
