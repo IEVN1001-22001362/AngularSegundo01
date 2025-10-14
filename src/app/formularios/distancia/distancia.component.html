@@ -1,24 +1,32 @@
-<div>
-    <h1>Distancia</h1>
-    <form [formGroup]="formulario">
-        <div>
-            <label for="x1"> X1:</label>
-            <input type="number" formControlName="x1" id="x1">
-        </div>
-         <div>
-            <label for="y1">Y1:</label>
-            <input type="number" formControlName="y1" id="y1">
-        </div>
-        <div>
-            <label for="x2"> X2:</label>
-            <input type="number" formControlName="x2" id="x2">
-        </div>
-         <div>
-            <label for="y2">Y2:</label>
-            <input type="number" formControlName="y2" id="y2">
-        </div>
-        <button type="button" class="btn btn-primary" (click)="Distancia()">Distancia</button>
-      <!--<div ngIf="resulatado !== null">-->  
-            <h2> Resultado : {{resultado}}</h2>
-    </form>
+<body>
+    <form class="max-w-sm mx-auto" [formGroup]="formulario">
+     <h1>Distancia</h1>
+  <div class="mb-5">
+    <label for="x1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">X1: </label>
+    <input type="number" formControlName="x1" id="x1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+<div class="mb-5">
+  <label for="y1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Y1: </label>
+  <input type="number" formControlName="y1" id="y1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
 </div>
+  <div class="mb-5">
+    <label for="x2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">X2: </label>
+    <input  type="number" formControlName="x2" id="x2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-5">
+    <label for="y2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Y2: </label>
+    <input type="number" formControlName="y2" id="y2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <button type="submit" class="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" (click)="Distancia()">Distancia</button>
+  
+   <label for="small-input" class="block mb-2 text-sm font-medium text-gray-900">Resultado : {{resultado}}</label>
+</form>
+</body>
+
+
+
+
+
+
+
+

@@ -27,6 +27,7 @@ export class DistanciaComponent {
 
     //funcion
   Distancia(): void {
+   
     this.objDist.x1= this.formulario.value.x1;
     this.objDist.x2= this.formulario.value.x2;
     this.objDist.y1= this.formulario.value.y1;

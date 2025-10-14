@@ -1,0 +1,20 @@
+<div>
+    <h1>A por B</h1>
+    <form [formGroup]="formulario">
+        <div>
+            <label for="a"> A:</label><br>
+            <input type="number" formControlName="a" id="a">
+        </div>
+        <br>
+         <div>
+            <label for="b">B:</label><br>
+            <input type="number" formControlName="b" id="b">
+        </div>
+       <br>
+        <button type="button" class="btn btn-primary" (click)="Multiplicar()">Multiplicar</button>
+     <h2>A: {{a}}</h2>
+       <h2>B: {{b}}</h2>
+            <h2> El Resultado :{{mensaje}}</h2>
+          
+    </form>
+</div>
